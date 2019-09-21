@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/time"
+    android:padding="15dp"
+    tools:context="com.example.quiz.StartingScreenActivity">
+
+    <RelativeLayout
+        android:layout_marginTop="80dp"
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:background="@drawable/status"
+        android:layout_height="100dp">
+
+    <TextView
+        android:id="@+id/text_view_highscore"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Highscore : 0"
+        android:layout_centerInParent="true"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="#161415"
+        android:layout_marginTop="110dp"
+        android:textSize="35dp" />
+    </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/lv"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/round_button_category">
+
+            <TextView
+                android:id="@+id/tvcategory"
+                android:text="Category : "
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:textColor="#160F0F"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp" />
+            <Spinner
+                android:id="@+id/spinner_category"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:singleLine="true"
+                android:layout_marginStart="15dp"
+                android:spinnerMode="dropdown"
+                android:layout_marginLeft="15dp" />
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_below="@id/lv"
+        android:background="@drawable/round_button_category"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/level"
+            android:text="Level : "
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textColor="#160F0F"
+            android:textSize="20sp"
+            android:layout_marginStart="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" />
+        <Spinner
+            android:id="@+id/spinner_difficulty"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:singleLine="true"
+            android:layout_marginStart="15dp"
+            android:spinnerMode="dropdown"
+            android:layout_marginLeft="15dp" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/button_start_quiz"
+        android:layout_width="250dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Play Start"
+        android:textStyle="italic"
+        android:textSize="20sp"
+        android:background="@drawable/round_button"/>
+</LinearLayout>
